@@ -25,8 +25,6 @@ public class C01_TestNGIlkTest {
         // sirket bize bir WebDriver verirse onu kullaniriz
         // yoksa Selenium'un kendi WebDriver'ini kullanabiliriz
         driver = new ChromeDriver();
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
@@ -56,6 +54,7 @@ public class C01_TestNGIlkTest {
 
         //burada sıralaması farklı önce actual sonra expected yazılır, Junit te tam tersiydi !!!
         Assert.assertNotEquals(actualSonuc,unExpectedSonuc);
+
 
 
 
