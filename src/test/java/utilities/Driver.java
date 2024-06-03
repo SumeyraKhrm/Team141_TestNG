@@ -22,16 +22,18 @@ public class Driver {
 
     public static WebDriver getdriver(){
 
+        if( driver == null){    //her seferinde yeni sayfa acılmasını istemiyoruz
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+        }
         return driver;
 
     }
 
     public static void quitDriver(){
         driver.quit();
+        driver = null;      //kapattıktan sonrada yeni chromedriver atanabilmesi için null degeri atıyoruz
 
     }
 
