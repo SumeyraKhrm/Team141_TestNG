@@ -27,6 +27,7 @@
         <classes>
             <class name="tests.day22_crossBrowserCalisacakTestler.C01_AramaTesti"></class>
             <class name="tests.day22_crossBrowserCalisacakTestler.C02_PozitifLoginTesti"></class>
+            <class name="tests.day22_crossBrowserCalisacakTestler.C03_UrunSepetiTesti"></class>
         </classes>
     </test>
 
@@ -36,6 +37,7 @@
         <classes>
             <class name="tests.day22_crossBrowserCalisacakTestler.C01_AramaTesti"></class>
             <class name="tests.day22_crossBrowserCalisacakTestler.C02_PozitifLoginTesti"></class>
+            <class name="tests.day22_crossBrowserCalisacakTestler.C03_UrunSepetiTesti"></class>
         </classes>
     </test>
 
