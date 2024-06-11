@@ -12,7 +12,7 @@ public class C01_TestDatasiKullanimi {
 
 
 
-        @Test
+        @Test (groups = {"smoke","E2E"})
         public void aramaTesti(){
 
             // testotomasyonu anasayfaya gidin

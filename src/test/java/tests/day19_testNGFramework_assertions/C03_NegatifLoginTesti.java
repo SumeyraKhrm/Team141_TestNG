@@ -51,7 +51,7 @@ public class C03_NegatifLoginTesti {
     }
 
 
-    @Test
+    @Test (groups = "smoke")
     public void gecersizEmailGecersizPasswordTesti(){
 
         //1- https://www.testotomasyonu.com/ anasayfasina gidin

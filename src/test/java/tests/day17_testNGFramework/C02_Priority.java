@@ -70,7 +70,7 @@ public class C02_Priority {
     }
 
 
-    @Test (priority = 2)
+    @Test (priority = 2, groups = "smoke")
     public void wisequarterTesti(){
 
         driver.get("https://www.wisequarter.com");

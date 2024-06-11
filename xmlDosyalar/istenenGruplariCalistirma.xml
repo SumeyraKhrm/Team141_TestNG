@@ -18,15 +18,24 @@
                 Bunun icin <test> 'in icinde
                     hem calisacak/calismayacak gruplari
                     hem de bu gruplari nerede bulacagimizi belirlemeliyiz
+
+                    testng.org > testng.xml adressinden bulabiliriz !!!
 -->
 
 
 <suite name="istenen gruplari calistirma">
+    <test name="Smoke Test">
+        <groups>
+            <run>
 
+                <include name="smoke"></include>
+                <exclude name="E2E"></exclude>
+            </run>
+        </groups>
 
-
-
-
-
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+    </test>
 
 </suite>
