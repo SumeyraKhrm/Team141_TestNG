@@ -9,7 +9,10 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 import java.util.List;
 
-public class Driver {
+public class
+
+
+Driver {
 
 
     // Driver class'i WebDriver objesini olusturacagimiz

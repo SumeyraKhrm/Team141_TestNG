@@ -1,6 +1,7 @@
 package tests.day19_testNGFramework_assertions;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import pages.TestotomasyonuPage;
 import utilities.ConfigReader;
@@ -8,7 +9,8 @@ import utilities.Driver;
 
 public class C02_PozitifLoginTesti {
 
-    //dinamik olamayan birşey kalmadı
+    //dinamik olamayan birşey
+    //AfterMethod ile test pass olunca kapatıyor fakat test failed olunca da kapatıyor bu sayede acık sayfa kalmıyor.
 
     @Test
     public void pozitifLogitTest(){
@@ -38,9 +40,14 @@ public class C02_PozitifLoginTesti {
         //6- Basarili olarak giris yapilabildigini test edin
         Assert.assertTrue(testotomasyonuPage.logOutButonu.isDisplayed());
 
-        Driver.quitDriver();
-
-
-
+      //  Driver.quitDriver();
     }
+
+
+        @AfterMethod
+        public void teardown(){
+            Driver.quitDriver();
+        }
+
+
 }
