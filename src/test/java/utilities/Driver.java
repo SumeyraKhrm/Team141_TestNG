@@ -7,59 +7,58 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
-import java.util.List;
 
-public class
-
-
-Driver {
-
+public class Driver {
 
     // Driver class'i WebDriver objesini olusturacagimiz
-    // ve gerkeli ayarlari yapacagimiz class olacak
+    // ve gerekli ayarlari yapacagimiz class olacak
 
     // Hedef configuration properties'den hangi browser secilirse
     // bize o browser'i uretecek bir class olusturmak
 
     // Driver class'inda bize driver objesi dondurecek getDriver() olusturacagiz
 
-    public static WebDriver driver ;
+    private Driver(){
 
+    }
 
-    public static WebDriver getdriver(){
+    public static WebDriver driver;
 
-        if( driver == null){    //her seferinde yeni sayfa acılmasını istemiyoruz
-                String istenenBrowser = ConfigReader.getProperty("browser"); // firefox
+    public static WebDriver getDriver(){
 
-                switch (istenenBrowser){
+        if (driver == null){
+            String istenenBrowser = ConfigReader.getProperty("browser"); // firefox
 
-                    case "firefox" :
-                        driver = new FirefoxDriver();
-                        break;
+            switch (istenenBrowser){
 
-                    case "edge" :
-                        driver = new EdgeDriver();
-                        break;
+                case "firefox" :
+                    driver = new FirefoxDriver();
+                    break;
 
-                    case "safari" :
-                        driver = new SafariDriver();
-                        break;
+                case "edge" :
+                    driver = new EdgeDriver();
+                    break;
 
-                    default:
-                        driver = new ChromeDriver();
-                }
+                case "safari" :
+                    driver = new SafariDriver();
+                    break;
 
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                default:
+                    driver = new ChromeDriver();
+            }
+
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         }
+
         return driver;
+
     }
+
 
     public static void quitDriver(){
         driver.quit();
-        driver = null;      //kapattıktan sonrada yeni chromedriver atanabilmesi için null degeri atıyoruz
-
+        driver =null;
     }
 }
