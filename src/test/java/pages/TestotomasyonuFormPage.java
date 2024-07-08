@@ -9,7 +9,7 @@ public class TestotomasyonuFormPage {
 
 
     public TestotomasyonuFormPage(){
-            PageFactory.initElements(Driver.getdriver(),this);
+            PageFactory.initElements(Driver.getDriver(),this);
         }
 
 

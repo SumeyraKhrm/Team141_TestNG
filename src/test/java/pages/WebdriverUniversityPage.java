@@ -9,7 +9,7 @@ public class WebdriverUniversityPage {
 
 
     public WebdriverUniversityPage(){
-        PageFactory.initElements(Driver.getdriver(),this);
+        PageFactory.initElements(Driver.getDriver(),this);
     }
 
 

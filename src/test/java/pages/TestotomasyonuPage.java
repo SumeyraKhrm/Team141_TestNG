@@ -15,7 +15,7 @@ public class TestotomasyonuPage {
 
 
     public TestotomasyonuPage(){
-        PageFactory.initElements(Driver.getdriver(),this);
+        PageFactory.initElements(Driver.getDriver(),this);
     }
 
     // WebElement aramakutusu = Driver.getDriver().findElement(By.id("global-search"));

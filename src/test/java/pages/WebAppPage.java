@@ -10,7 +10,7 @@ import utilities.Driver;
 public class WebAppPage {
 
 
-    public WebAppPage (){PageFactory.initElements(Driver.getdriver(),this);}
+    public WebAppPage (){PageFactory.initElements(Driver.getDriver(),this);}
 
 
 

@@ -9,7 +9,7 @@ public class FacebookPage {
 
 
          public FacebookPage(){
-            PageFactory.initElements(Driver.getdriver(),this);
+            PageFactory.initElements(Driver.getDriver(),this);
         }
 
 
