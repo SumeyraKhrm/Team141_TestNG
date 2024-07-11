@@ -16,12 +16,12 @@ public class C06_ListeLocateEtme {
     public void aramaTesti(){
 
         // 1- testotomasyonu anasayfaya gidin
-        Driver.getdriver().get("https://www.testotomasyonu.com");
+        Driver.getDriver().get("https://www.testotomasyonu.com");
         //    ve sayfaya gittiginizi test edin
         //    url'in testotomasyonu icerdigini test edelim
 
         String expectedUrlIcerik = "testotomasyonu";
-        String actualUrl = Driver.getdriver().getCurrentUrl();
+        String actualUrl = Driver.getDriver().getCurrentUrl();
 
         Assert.assertTrue(actualUrl.contains(expectedUrlIcerik));
 

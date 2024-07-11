@@ -13,7 +13,7 @@ public class C03_FacebookNegatifLoginTesti {
     public void negatifLoginTesti(){
 
         //1 - https://www.facebook.com/ adresine gidin
-        Driver.getdriver().get("https://www.facebook.com/");
+        Driver.getDriver().get("https://www.facebook.com/");
 
         // cikiyorsa cookies'i kabul edin
         FacebookPage facebookPage = new FacebookPage();
