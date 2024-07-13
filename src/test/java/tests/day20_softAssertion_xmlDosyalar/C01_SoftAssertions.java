@@ -21,11 +21,11 @@ public class C01_SoftAssertions {
     public void aramaTesti(){
 
         // testotomasyonu anasayfaya gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
         // anasayfaya gittiginizi test edin
         String expectedUrl = ConfigReader.getProperty("toUrl");
-        String actualUrl = Driver.getdriver().getCurrentUrl();
+        String actualUrl = Driver.getDriver().getCurrentUrl();
 
         // 1.adim softAssert objesi olustur
         SoftAssert softAssert =new SoftAssert();

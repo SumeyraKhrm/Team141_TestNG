@@ -15,14 +15,14 @@ public class C05_WebdriverUniversityNegatifLoginTesti {
     public void negatifLoginTesti(){
 
         //1."http://webdriveruniversity.com/" adresine gidin
-        Driver.getdriver().get("https://webdriveruniversity.com/");
+        Driver.getDriver().get("https://webdriveruniversity.com/");
 
 
         //2."Login Portal" a  kadar asagi inin
         WebdriverUniversityPage webdriverUniversityPage = new WebdriverUniversityPage();
 
         //bilgisayarimda ilk sayfada login portal gorunuyor, asagi inmeye gerek yok
-        JavascriptExecutor jse = (JavascriptExecutor) Driver.getdriver();
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",webdriverUniversityPage.loginPortalElementi);
 
 
@@ -30,7 +30,7 @@ public class C05_WebdriverUniversityNegatifLoginTesti {
         webdriverUniversityPage.loginPortalElementi.click();
 
         //4.Diger window'a gecin
-        ReusableMethods.windowaGec("http://webdriveruniversity.com/Login-Portal/index.html",Driver.getdriver());
+        ReusableMethods.windowaGec("http://webdriveruniversity.com/Login-Portal/index.html",Driver.getDriver());
 
 
         //5."username" ve  "password" kutularina fake deger yazdirin
@@ -46,24 +46,24 @@ public class C05_WebdriverUniversityNegatifLoginTesti {
         //7.Popup'ta cikan yazinin "validation failed" oldugunu test edin
 
         String expectedAlertYazisi = "validation failed";
-        String actualAlertYazisi = Driver.getdriver()
+        String actualAlertYazisi = Driver.getDriver()
                 .switchTo().alert()
                 .getText();
 
         Assert.assertEquals(actualAlertYazisi,expectedAlertYazisi);
 
         //8.Ok diyerek Popup'i kapatin
-        Driver.getdriver()
+        Driver.getDriver()
                 .switchTo().alert()
                 .accept();
 
 
         //9.Ilk sayfaya geri donun
-        ReusableMethods.windowaGec("https://webdriveruniversity.com/",Driver.getdriver());
+        ReusableMethods.windowaGec("https://webdriveruniversity.com/",Driver.getDriver());
 
         //10.Ilk sayfaya donuldugunu test edin
         String expectedTitle = "WebDriverUniversity.com";
-        String actualTitle = Driver.getdriver().getTitle();
+        String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertEquals(actualTitle,expectedTitle);
 

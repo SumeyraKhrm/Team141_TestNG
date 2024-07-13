@@ -17,7 +17,7 @@ public class C02_PozitifLoginTesti {
 
 
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
 
         //2- account linkine basin
