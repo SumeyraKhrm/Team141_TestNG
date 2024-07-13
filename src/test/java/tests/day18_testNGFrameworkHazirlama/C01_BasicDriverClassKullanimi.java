@@ -14,14 +14,14 @@ public class C01_BasicDriverClassKullanimi {
     public void test01(){
 
         // testotomasyonu sayfasina gidin
-        Driver.getdriver().get("https://www.testotomasyonu.com");
+        Driver.getDriver().get("https://www.testotomasyonu.com");
 
         // phone icin arama yapin
-        WebElement aramaKutusu =Driver.getdriver().findElement(By.id("global-search"));
+        WebElement aramaKutusu =Driver.getDriver().findElement(By.id("global-search"));
         aramaKutusu.sendKeys("phone"  + Keys.ENTER);
 
         // arama sonucunda urun bulunabildigini test edin
-        WebElement aramaSonucElementi = Driver.getdriver().findElement(By.className("product-count-text"));
+        WebElement aramaSonucElementi = Driver.getDriver().findElement(By.className("product-count-text"));
 
         String unExpectedAramaSonucu = "0 Products Found";
         String actualAramaSonucu = aramaSonucElementi.getText();

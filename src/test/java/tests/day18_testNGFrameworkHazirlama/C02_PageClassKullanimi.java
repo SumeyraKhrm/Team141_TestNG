@@ -13,7 +13,7 @@ public class C02_PageClassKullanimi {
     public void test01(){
 
         // testotomasyonu sayfasina gidin
-        Driver.getdriver().get("https://www.testotomasyonu.com");
+        Driver.getDriver().get("https://www.testotomasyonu.com");
 
         // phone icin arama yapin
 

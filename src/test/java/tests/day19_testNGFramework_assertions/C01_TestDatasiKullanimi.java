@@ -16,7 +16,7 @@ public class C01_TestDatasiKullanimi {
         public void aramaTesti(){
 
             // testotomasyonu anasayfaya gidin
-            Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+            Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
             ReusableMethods.bekle(3);
 
             // phone icin arama yapin
@@ -25,7 +25,7 @@ public class C01_TestDatasiKullanimi {
 
             // arama sonucunda urun bulunabildigini test edin
             ReusableMethods.bekle(3);
-            Assert.assertTrue(  testotomasyonuPage.sonucElementleriList.size() > 0);
+            Assert.assertTrue(testotomasyonuPage.sonucElementleriList.size() > 0);
 
             // sayfayi kapatin
             Driver.quitDriver();
