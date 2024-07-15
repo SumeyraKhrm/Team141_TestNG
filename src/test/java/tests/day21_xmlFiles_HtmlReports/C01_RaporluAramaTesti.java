@@ -21,7 +21,7 @@ public class C01_RaporluAramaTesti extends TestBaseRapor {
         extentTest = extentReports.createTest("arama testi","belirlenen kelimenin bulunabildigini test eder");
 
         // testotomasyonu anasayfaya gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         extentTest.info("Kullanici testotomasyonu anasayfaya gider");  //test adımları raporluyor
         // belirlenen arama kelimesi icin arama yapin
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();

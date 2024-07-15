@@ -23,7 +23,7 @@ public class C02_RaporluPozitifLoginTesti extends TestBaseRapor {
         extentTest = extentReports.createTest("pozitif login testi","Gecerli bilgilerle sisteme giris yapilabilir");
 
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         extentTest.info("Kullanici testotomasyonu anasayfasina gider");
 
         //2- account linkine basin

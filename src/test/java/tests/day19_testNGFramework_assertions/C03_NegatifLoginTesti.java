@@ -22,7 +22,7 @@ public class C03_NegatifLoginTesti {
     @Test
       public void NegatifLoginTesti(){
 
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
         testotomasyonuPage.accountLinki.click();
         testotomasyonuPage.loginEmailKutusu.sendKeys(ConfigReader.getProperty("toGecerliEmail"));
@@ -38,7 +38,7 @@ public class C03_NegatifLoginTesti {
     @Test
     public void gecersizEmailTesti(){
 
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
         testotomasyonuPage.accountLinki.click();
         testotomasyonuPage.loginEmailKutusu.sendKeys(ConfigReader.getProperty("toGecersizEmail"));
@@ -55,7 +55,7 @@ public class C03_NegatifLoginTesti {
     public void gecersizEmailGecersizPasswordTesti(){
 
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
         //2- account linkine basin
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();

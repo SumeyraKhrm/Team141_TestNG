@@ -13,7 +13,7 @@ public class C04_DriverClassIlkTest {
     @Test
     public void test01() throws InterruptedException {
 
-        Driver.getdriver().get("https://www.testotomasyonu.com");
+        Driver.getDriver().get("https://www.testotomasyonu.com");
 
         Thread.sleep(3);
 

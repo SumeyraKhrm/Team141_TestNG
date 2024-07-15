@@ -18,7 +18,7 @@ import java.util.List;
         public void formDoldurmaTesti(){
 
             //1 - https://testotomasyonu.com/form adresine gidin
-            Driver.getdriver().get("https://testotomasyonu.com/form");
+            Driver.getDriver().get("https://testotomasyonu.com/form");
 
             //2- Dogum tarihi gun seçeneğinden index kullanarak 5’i secin
             TestotomasyonuFormPage testotomasyonuFormPage = new TestotomasyonuFormPage();

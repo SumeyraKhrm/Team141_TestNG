@@ -15,7 +15,7 @@ public class C03_RaporluNegatifLoginTesti extends TestBaseRapor {
         extentTest = extentReports.createTest("Gecersiz Password Testi",
                 "Gecersiz password ile sisteme giris yapilamaz");
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         extentTest.info("Kullanici testotomasyonu anasayfasina gider");
         //2- account linkine basin
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
@@ -39,7 +39,7 @@ public class C03_RaporluNegatifLoginTesti extends TestBaseRapor {
         extentTest = extentReports.createTest("Gecersiz Email Testi",
                 "Gecersiz email ile sisteme giris yapilamaz");
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         extentTest.info("Kullanici testotomasyonu anasayfasina gider");
         //2- account linkine basin
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
@@ -63,7 +63,7 @@ public class C03_RaporluNegatifLoginTesti extends TestBaseRapor {
         extentTest = extentReports.createTest("Gecersiz Email Gecersiz Password Testi",
                 "Gecersiz email ve gecersiz password ile sisteme giris yapilamaz");
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
-        Driver.getdriver().get(ConfigReader.getProperty("toUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
         extentTest.info("Kullanici testotomasyonu anasayfasina gider");
         //2- account linkine basin
         TestotomasyonuPage testotomasyonuPage = new TestotomasyonuPage();
